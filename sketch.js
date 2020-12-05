@@ -206,7 +206,9 @@ function mouseReleased(){
 
 function keyPressed(){
   if(keyCode === 32){
-      slingShot.attach(this.ball);
+   ball = Bodies.circle(50,200,20);
+   World.add(world,ball);
+   slingShot.attach(this.ball);
   }
 }
 
